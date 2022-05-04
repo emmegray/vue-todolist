@@ -2,24 +2,23 @@ const app = new Vue ({
   el: `#app`,
   data:{
     todos:[
-      {text: `Fare la spesa`, complete: false}
+      {text: `Fare la spesa`, done: false}
     ],
     newTodo: ``
   },
   methods:{
     addTodo(){
       if(this.newTodo.length > 1){
-        this.todos.push({text: this.newTodo, complete: false});
+        this.todos.push({text: this.newTodo, done: false});
         this.newTodo=``;
       }
     },
     removeTodo(index){
-      if(confirm(`Sei sicuro di eliminare: ${this.todos[index]}?`))
+      if(confirm(`Sei sicuro di eliminare: ${this.todos[index].text}?`))
       this.todos.splice(index, 1);
     },
-    completeTodo(index){
-      this.todos[index] = {...this.todos[index], complete: true};
-      console.log(this.todos[index]);
+    doneTodo(index){
+      this.todos[index].done = !this.todos[index].done;
     }
  }
 })

@@ -51,3 +51,12 @@ ul {
 .pink {
   background-color: palevioletred;
 }
+
+h2 {
+  padding: 5px;
+  color: white;
+}
+
+.done span{
+text-decoration: line-through;
+}
