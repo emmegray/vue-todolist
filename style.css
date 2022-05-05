@@ -6,6 +6,15 @@ ul {
   padding-left: 0
 }
 
+h2 {
+  padding: 5px;
+  color: white;
+}
+
+.pink {
+  background-color: palevioletred;
+}
+
 .new-todo input{
   padding: 10px 20px;
   border-radius: 10px;
@@ -34,8 +43,8 @@ ul {
 }
 
 .todo-container ul li:hover{
-  background-color: rgba(255, 255, 255, 0.689);
-  color: palevioletred;
+  background-color: rgb(167, 53, 89);
+  color: white;
   border-radius: 10px;
 }
 
@@ -48,15 +57,11 @@ ul {
   color: palevioletred;
 }
 
-.pink {
-  background-color: palevioletred;
-}
-
-h2 {
-  padding: 5px;
-  color: white;
-}
-
 .done span{
 text-decoration: line-through;
 }
+
+.btn:hover{
+  background-color: rgb(130, 68, 88);
+}
+
